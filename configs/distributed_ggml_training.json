@@ -1,0 +1,18 @@
+{
+  "task": "distributed_ggml",
+  "data_path": "/path/to/your/repository",
+  "project_name": "my-distributed-ggml-training",
+  "file_extensions": [".py", ".md", ".yaml", ".yml", ".json", ".txt", ".rst"],
+  "max_fragment_size": 1024,
+  "tensor_dimensions": 512,
+  "attention_threshold": 0.1,
+  "distributed_shards": 4,
+  "hypergraph_depth": 3,
+  "export_format": "ggml",
+  "semantic_clustering": true,
+  "recursive_parsing": true,
+  "token": "${HF_TOKEN}",
+  "push_to_hub": false,
+  "username": "${HF_USERNAME}",
+  "log": "none"
+}
